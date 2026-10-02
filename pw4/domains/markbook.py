@@ -3,7 +3,6 @@ import math
 class MarkBook:
     def __init__(self):
         self._marks = {}
-    @staticmethod
     def _round_down(value):
         return math.floor(float(value) * 10) / 10
     def set_mark(self, course_id, student_id, mark):
