@@ -5,6 +5,16 @@ def read_int(prompt):
         except ValueError:
             print("Please enter a whole number.")
 
+def read_mark(prompt):
+    while True:
+        try:
+            mark = float(input(prompt).strip())
+            if not 0 <= mark <= 20:
+                raise ValueError
+            return mark
+        except ValueError:
+            print("  Please enter a number between 0 and 20.")
+
 def ask_input(prompt, setter):
     while True:
         try:
